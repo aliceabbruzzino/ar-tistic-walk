@@ -1,4 +1,3 @@
-
 window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
