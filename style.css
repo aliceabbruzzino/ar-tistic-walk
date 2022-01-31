@@ -1,1 +1,6 @@
-#map { height: 180px; }
+#map { 
+    height: 180px; 
+}
+.navbar {
+    z-index: 3;
+}
