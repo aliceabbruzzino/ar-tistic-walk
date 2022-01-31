@@ -38,14 +38,34 @@
 
     <body style="margin:0; overflow:hidden;">
 
-        <a-scene
-        vr-mode-ui="enabled: false"
-		embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">AR-tistic Walk</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         
-            <a-camera gps-camera rotation-reader></a-camera>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./map.html">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./geomodels.html">View</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-            <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 52.674132; latitude: -8.575147;" animation-mixer/>
+      <a-scene
+        vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-camera rotation-reader></a-camera>
+
+        <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 52.674132; latitude: -8.575147;" animation-mixer/>
 	    </a-scene>
 
         <!-- Bootstrap JS -->
