@@ -37,3 +37,5 @@ function renderPlaces(places) {
    });
 }
 
+
+

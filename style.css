@@ -1,6 +1,17 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 #map { 
-    height: 180px; 
+    height: 100%;
+    width: 100vw;
+    z-index: 1; 
 }
 .navbar {
     z-index: 3;
+}
+
+.mapbox-directions-profile-driving {
+    display: none;
 }
