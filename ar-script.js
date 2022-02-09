@@ -6,10 +6,10 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
-           name: 'Magnemite',
+           name: 'RS_building.glb',
            location: {
-               lat: 52.679135,
-               lng: -8.576988,
+               lat: 52.679118,
+               lng: -8.576943,
            }
        },
    ];
