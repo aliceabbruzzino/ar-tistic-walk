@@ -6,10 +6,10 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
-           name: 'RS_building.glb',
+           name: 'RS_building',
            location: {
-               lat: 52.679118,
-               lng: -8.576943,
+               lat: 52.679136,
+               lng: -8.576989,
            }
        },
    ];
@@ -24,10 +24,10 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
+       model.setAttribute('gltf-model', './assets/RS_building.glb');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '0.8 0.8 0.8');
+       model.setAttribute('scale', '0.1 0.1 0.1');
 
        model.addEventListener('loaded', () => {
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
