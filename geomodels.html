@@ -63,23 +63,23 @@
       <a-scene
       vr-mode-ui="enabled: false"
       embedded
-      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
-      <a-box material="color: yellow" gps-entity-place="latitude: <52.679151>; longitude: <-8.576888>" position="0 30 0"/>           
-          <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
-    </a-scene>
-      <!--<a-scene
-        vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-camera gps-camera rotation-reader></a-camera>
+      arjs="sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;">
+      <a-box material="color: yellow" gps-entity-place="latitude: <52.679151>; longitude: <-8.576888>" position="0 30 0"/> 
+      <a-box material="color: red" gps-entity-place="latitude: <52.678029>; longitude: <-8.576326>" position="0 30 0"/> 
+      <a-box material="color: green" gps-entity-place="latitude: <52.674084>; longitude: <-8.575810>" position="0 30 0"/> 
+      <a-box material="color: blue" gps-entity-place="latitude: <52.674906>; longitude: <-8.577170>" position="0 30 0"/> 
 
-        <a-scene>
-          <a-assets>
-            <a-asset-item id="RS_builing" src="./assets/RS_building.glb"></a-asset-item>
-          </a-assets>
         
-          <a-entity gltf-model="#RS_building" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: -8.576989; latitude: 52.679136;" animation-mixer></a-entity>
-	      </a-scene>-->
-    
+      <a-assets>
+        <a-asset-item id="RS_builing" src="./assets/RS_building.glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#RS_building" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: -8.577292; latitude: 52.673189;" animation-mixer></a-entity>
+         
+      <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
+    </a-scene>
 
+
+      
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
