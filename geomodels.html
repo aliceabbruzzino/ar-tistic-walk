@@ -58,12 +58,7 @@
     <a-box material="color: green" gps-entity-place="latitude: 52.674911; longitude: -8.577165"/>
     <a-box material="color: blue" gps-entity-place="latitude: 52.674084; longitude: -8.575820"/>
 
-      <a-text
-        value="This content will always face you."
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 52.679039; longitude: -8.576036;"
-      ></a-text>
+    <a-entity gltf-model="url(./assets/RS_building/RS_building.bin)"></a-entity>
   
 
       <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera rotation-reader> </a-camera>
