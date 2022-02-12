@@ -82,7 +82,12 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         
         <a-entity gltf-model="assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: -8.575820; latitude: 52.674084;" animation-mixer/>
-
+        <a-text
+            value="This content will always face you."
+            look-at="[gps-camera]"
+            scale="50 50 50"
+            gps-entity-place="latitude: 52.674084; longitude: -8.575820;"
+          ></a-text>
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 
