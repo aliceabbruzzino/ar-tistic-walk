@@ -58,9 +58,16 @@
             <a-asset-item id="madrona" src="assets/madrona_invasives/scene.gltf"></a-asset-item>
           </a-assets>
         
+          <a-text
+            value="This content will always face you."
+            look-at="[gps-camera]"
+            scale="50 50 50"
+            gps-entity-place="latitude: 52.674084; longitude: -8.575820;"
+          ></a-text>
+          
           <a-entity 
             gltf-model="#madrona"
-            gps-entity-place="latitude: 52.674084; longitude: -8.575820" 
+            gps-entity-place="latitude: 52.674084; longitude: -8.575820;" 
             scale="0.01 0.01 0.01"
             rotation="0 180 0"
             ></a-entity>
