@@ -3,6 +3,46 @@
         "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
+    "extensionsUsed" : [
+        "KHR_lights_punctual"
+    ],
+    "extensionsRequired" : [
+        "KHR_lights_punctual"
+    ],
+    "extensions" : {
+        "KHR_lights_punctual" : {
+            "lights" : [
+                {
+                    "color" : [
+                        1,
+                        0.015149419195950031,
+                        0.1434868574142456
+                    ],
+                    "intensity" : 200,
+                    "spot" : {
+                        "innerConeAngle" : 0.3337942263919169,
+                        "outerConeAngle" : 0.39269909262657166
+                    },
+                    "type" : "spot",
+                    "name" : "Sun"
+                },
+                {
+                    "color" : [
+                        0.1794515997171402,
+                        0.8343558311462402,
+                        1
+                    ],
+                    "intensity" : 150,
+                    "spot" : {
+                        "innerConeAngle" : 0.3337942263919169,
+                        "outerConeAngle" : 0.39269909262657166
+                    },
+                    "type" : "spot",
+                    "name" : "Sun.001"
+                }
+            ]
+        }
+    },
     "scene" : 0,
     "scenes" : [
         {
@@ -16,11 +56,13 @@
                 6,
                 7,
                 8,
-                9,
                 10,
-                11,
+                12,
                 13,
-                14
+                14,
+                15,
+                17,
+                18
             ]
         }
     ],
@@ -209,6 +251,78 @@
             ]
         },
         {
+            "extensions" : {
+                "KHR_lights_punctual" : {
+                    "light" : 0
+                }
+            },
+            "name" : "Sun_Orientation",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ]
+        },
+        {
+            "children" : [
+                9
+            ],
+            "name" : "Sun",
+            "rotation" : [
+                0.3960714340209961,
+                0.5130111575126648,
+                -0.49265289306640625,
+                0.580723762512207
+            ],
+            "scale" : [
+                0.31676435470581055,
+                0.31676435470581055,
+                0.31676435470581055
+            ],
+            "translation" : [
+                2.9139726161956787,
+                1.1273531913757324,
+                0
+            ]
+        },
+        {
+            "extensions" : {
+                "KHR_lights_punctual" : {
+                    "light" : 1
+                }
+            },
+            "name" : "Sun.001_Orientation",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ]
+        },
+        {
+            "children" : [
+                11
+            ],
+            "name" : "Sun.001",
+            "rotation" : [
+                -0.6045921444892883,
+                0.7606065273284912,
+                0.2003856897354126,
+                0.12566471099853516
+            ],
+            "scale" : [
+                0.2933083772659302,
+                0.2933083772659302,
+                0.2933083772659302
+            ],
+            "translation" : [
+                -3.045607805252075,
+                1.1273531913757324,
+                1.0843958854675293
+            ]
+        },
+        {
             "mesh" : 9,
             "name" : "BezierCurve",
             "rotation" : [
@@ -290,7 +404,7 @@
         },
         {
             "children" : [
-                12
+                16
             ],
             "mesh" : 13,
             "name" : "BezierCurve.001",
@@ -464,7 +578,7 @@
                 {
                     "sampler" : 0,
                     "target" : {
-                        "node" : 10,
+                        "node" : 14,
                         "path" : "scale"
                     }
                 }
@@ -483,14 +597,14 @@
                 {
                     "sampler" : 0,
                     "target" : {
-                        "node" : 11,
+                        "node" : 15,
                         "path" : "rotation"
                     }
                 },
                 {
                     "sampler" : 1,
                     "target" : {
-                        "node" : 11,
+                        "node" : 15,
                         "path" : "scale"
                     }
                 }
@@ -514,21 +628,21 @@
                 {
                     "sampler" : 0,
                     "target" : {
-                        "node" : 12,
+                        "node" : 16,
                         "path" : "scale"
                     }
                 },
                 {
                     "sampler" : 1,
                     "target" : {
-                        "node" : 12,
+                        "node" : 16,
                         "path" : "translation"
                     }
                 },
                 {
                     "sampler" : 2,
                     "target" : {
-                        "node" : 12,
+                        "node" : 16,
                         "path" : "rotation"
                     }
                 }
@@ -557,14 +671,14 @@
                 {
                     "sampler" : 0,
                     "target" : {
-                        "node" : 14,
+                        "node" : 18,
                         "path" : "translation"
                     }
                 },
                 {
                     "sampler" : 1,
                     "target" : {
-                        "node" : 14,
+                        "node" : 18,
                         "path" : "scale"
                     }
                 }
