@@ -46,15 +46,15 @@
       
       <!--
         Coordinates:
-        Thomond Village: latitude:52.679236; longitude:-8.577019; -> try
-        CSIS: latitude:52.674083; longitude:-8.575815; -> done
-        Living bridge: latitude:52.676577; longitude:-8.570377; -> 
-        HS Building: latitude:52.678524; longitude:-8.568776; -> done
-        RS Building: latitude:52.673195; longitude:-8.577320;
+        Living bridge: latitude:52.676577; longitude:-8.570377; -> done
         Library: latitude:52.673542; longitude:-8.572933; -> done
-        Foundation Building: latitude:52.674187; longitude:-8.573059;
+        HS Building: latitude:52.678524; longitude:-8.568776; -> done
+        Foundation Building: latitude:52.674187; longitude:-8.573059; -> done
+        CSIS: latitude:52.674083; longitude:-8.575815; -> done
 
 
+        Thomond Village: latitude:52.679236; longitude:-8.577019; -> try
+        RS Building: latitude:52.673195; longitude:-8.577320;  
       -->
   
       <a-scene
@@ -63,26 +63,53 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth:1280; displayHeight:960; debugUIEnabled:false;'>
         
         <a-asset>
-          <a-asset-item id="library" src="assets/Library/scene3.gltf"></a-asset-item>
-          <a-asset-item id="HS_building" src="assets/HS_building/scene.glb"></a-asset-item>
+          <a-asset-item id="Living_bridge" src="assets/Living_bridge/scene.gltf"></a-asset-item>
+          <a-asset-item id="Library" src="assets/Library/scene.gltf"></a-asset-item>
+          <a-asset-item id="HS_building" src="assets/HS_building/scene.gltf"></a-asset-item>
+          <a-asset-item id="Foundation_building" src="assets/Foundation_building/scene.gltf"></a-asset-item>
+          <a-asset-item id="CSIS_building" src="assets/CSIS_building/scene.gltf"></a-asset-item>
         </a-asset>
 
         <a-entity 
-            gltf-model="#library"
-            gps-projected-entity-place="latitude:52.679236; longitude:-8.577019;" 
-            scale="10 10 10"
+            gltf-model="#Living_bridge"
+            gps-projected-entity-place="latitude:52.676577; longitude:-8.570377;" 
+            scale="50 50 50"
             animation-mixer
             animation-loop>
         </a-entity>
-<!--
+
+        <a-entity 
+            gltf-model="#Library"
+            gps-projected-entity-place="latitude:52.673542; longitude:-8.572933;" 
+            scale="50 50 50"
+            animation-mixer
+            animation-loop>
+        </a-entity>
+
         <a-entity 
             gltf-model="#HS_building"
-            gps-projected-entity-place="latitude:52.674083; longitude:-8.575815;" 
-            scale="10 10 10"
+            gps-projected-entity-place="latitude:52.678524; longitude:-8.568776;" 
+            scale="50 50 50"
             animation-mixer
             animation-loop>
         </a-entity>
--->
+
+        <a-entity 
+            gltf-model="#Foundation_building"
+            gps-projected-entity-place="latitude:52.674187; longitude:-8.573059;" 
+            scale="50 50 50"
+            animation-mixer
+            animation-loop>
+        </a-entity>
+
+        <a-entity 
+            gltf-model="#CSIS_building"
+            gps-projected-entity-place="latitude:52.674083; longitude:-8.575815;" 
+            scale="50 50 50"
+            animation-mixer
+            animation-loop>
+        </a-entity>
+
         <a-camera gps-camera rotation-reader></a-camera>
         
 	    </a-scene>
