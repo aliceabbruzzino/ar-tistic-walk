@@ -110,7 +110,13 @@
             animation-loop>
         </a-entity>
 
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera 
+          gps-camera 
+          rotation-reader 
+          minDistance="50" 
+          maxDistance="800"
+          
+        ></a-camera>
         
 	    </a-scene>
 
