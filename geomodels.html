@@ -74,6 +74,7 @@
             gltf-model="#Living_bridge"
             gps-entity-place="latitude:52.676577; longitude:-8.570377;" 
             scale="50 50 50"
+            position="0 0 100"
             animation-mixer
             animation-loop>
         </a-entity>
@@ -110,11 +111,13 @@
             animation-loop>
         </a-entity>
 
+        <!-- gpsMinDistance => update GPS only if user moves by 5 meters or more => avoid shaking for near objects -->
+        <!-- using accelerationToMove => 'smooth' inertial sensors precision in order to avoid distant places shaking -->
         <a-camera 
           gps-camera 
           rotation-reader 
-          gpsMinDistance
-          gpsTimeInterval
+          gpsMinDistance="5"
+          accelerationToMove="1.0"
         ></a-camera>
         
 	    </a-scene>
