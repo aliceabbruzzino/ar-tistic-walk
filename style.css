@@ -1,22 +1,44 @@
+/* GENERAL THINGS_GENERAL THINGS_GENERAL THINGS_GENERAL THINGS_GENERAL THINGS_GENERAL THINGS_GENERAL THINGS_GENERAL THINGS */
 html, body {
     height: 100%;
     margin: 0;
   }
 
+/*
+  colors:
+  orange -> #df5d3aff
+  beige -> #d8b890ff
+  purple -> #9381ffff
+  grey -> #b2b1a7ff
+  black -> #163425ff
+*/
+
+/* HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE */
+.navbar-brand{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+}
+
+body{
+    background-color: #9381ffff;
+}
+
+
+
+
+/* MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP */
 #map { 
     height: 100%;
     width: 100vw;
     z-index: 1; 
 }
-.navbar {
+.navbar .navbar-expand-lg {
     z-index: 3;
 }
 
 .mapbox-directions-profile-driving {
     display: none;
 }
-
-
 
 span {
     margin-right: 0.5em;
@@ -68,3 +90,4 @@ div.debug {
     font-size: 1.5em;
     border-radius: 5px;
 }
+
