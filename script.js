@@ -12,18 +12,18 @@ window.onload = () => {
 };
 
 function setPos(longitude,latitude) {
-        const box = document.createElement("a-box");
-        box.setAttribute('scale', {
+        const model = document.getElementById("CSIS_building");
+        model.setAttribute('scale', {
             x: 10, 
             y: 10,
             z: 10
         });
-        box.setAttribute('material', {
-            color: 'red'
+        model.setAttribute('animationmixer', {
+            enabled: true;
         });
-        box.setAttribute('gps-projected-entity-place', {
-            latitude: latitude+0.0006,
-            longitude: longitude-0.0005
+        model.setAttribute('gps-projected-entity-place', {
+            latitude: 52.674083+0.0006,
+            longitude: -8.575815-0.0005
         });
         const box2 = document.createElement("a-box");
         box2.setAttribute('scale', {
