@@ -19,7 +19,7 @@ function setPos(longitude,latitude) {
             z: 10
         });
         model.setAttribute('animationmixer', {
-            enabled: true;
+            enabled: true
         });
         model.setAttribute('gps-projected-entity-place', {
             latitude: 52.674083+0.0006,
