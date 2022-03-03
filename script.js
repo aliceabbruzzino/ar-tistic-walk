@@ -10,7 +10,7 @@ window.onload = () => {
         }
     });    
 };
-
+/*
 function setPos(longitude,latitude) {
         const model = document.getElementById("CSIS_building");
         model.setAttribute('scale', {
@@ -42,3 +42,4 @@ function setPos(longitude,latitude) {
         sceneEl.appendChild(box);
         sceneEl.appendChild(box2);
 }
+*/
