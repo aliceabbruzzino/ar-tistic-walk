@@ -9,7 +9,7 @@ function getLocation() {
 
         // add place name
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${52.674083}; longitude: ${-8.575815};`);
+        model.setAttribute('gps-entity-place', `latitude: ${52.6740563}; longitude: ${-8.575226};`);
         model.setAttribute('gltf-model', 'assets/CSIS_building/scene.gltf');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
