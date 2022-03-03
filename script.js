@@ -1,29 +1,24 @@
-function getLocation() {
-  if (navigator.geolocation) {
-    function renderPlaces(places) {
-      let scene = document.querySelector('a-scene');
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
 
-      places.forEach((place) => {
-        let latitude = place.location.lat;
-        let longitude = place.location.lng;
+function success(pos) {
+  var crd = pos.coords;
 
-        // add place name
-        let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${52.6740563}; longitude: ${-8.575226};`);
-        model.setAttribute('gltf-model', 'assets/CSIS_building/scene.gltf');
-        model.setAttribute('rotation', '0 180 0');
-        model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '50 50 50');
-
-        model.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-        });
-
-        scene.appendChild(model);
-      });
-    }
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
+  console.log('Your current position is:');
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
 }
-  
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+const watchID = navigator.geolocation.watchPosition((position) => {
+  doSomething(position.coords.latitude, position.coords.longitude);
+});
