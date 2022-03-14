@@ -18,7 +18,7 @@ function success(pos) {
     if ((target[index].latitude <= (crd.latitude + 0.0001) && target[index].latitude >= (crd.latitude - 0.0001)) && (target[index].longitude <= (crd.longitude + 0.0001) && target[index].longitude >= (crd.longitude - 0.0001))) {
 
       document.getElementById("renderer").outerHTML = htmlString;
-      return;
+      
     }
   });
 }
