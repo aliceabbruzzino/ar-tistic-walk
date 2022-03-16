@@ -20,7 +20,7 @@ function success(pos) {
       } else {
         document.getElementById("renderer").setAttribute("visibility", false);
       }
-    }, 1000)
+    }, 3000)
   });
 }
 
