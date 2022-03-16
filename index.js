@@ -12,13 +12,15 @@ function success(pos) {
   ]
 
   ARObjects.forEach((htmlString, index) => {
-    if ((target[index].latitude <= (crd.latitude + 0.001) && target[index].latitude >= (crd.latitude - 0.001)) && (target[index].longitude <= (crd.longitude + 0.001) && target[index].longitude >= (crd.longitude - 0.001))) {
+    setTimeout(() => {
+      if ((target[index].latitude <= (crd.latitude + 0.001) && target[index].latitude >= (crd.latitude - 0.001)) && (target[index].longitude <= (crd.longitude + 0.001) && target[index].longitude >= (crd.longitude - 0.001))) {
 
-      document.getElementById("renderer").outerHTML = htmlString;
-      document.getElementById("renderer").setAttribute("visibility", true);
-    } else {
-      document.getElementById("renderer").setAttribute("visibility", false);
-    }
+        document.getElementById("renderer").outerHTML = htmlString;
+        document.getElementById("renderer").setAttribute("visibility", true);
+      } else {
+        document.getElementById("renderer").setAttribute("visibility", false);
+      }
+    }, 1000)
   });
 }
 
