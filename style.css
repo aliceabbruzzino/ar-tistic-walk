@@ -13,43 +13,97 @@ html, body {
   black -> #163425ff
 */
 
-/* HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE */
+/* NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV_NAV */
 .navbar-brand{
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 900;
 }
 
+button.navbar-toggler{
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+
+span.navbar-toggler-icon{
+    margin: 0;
+}
+
+nav{
+    padding: 8px 16px;
+}
+
+
+/* HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE_HOMEPAGE */
 body{
     background-color: #9381ffff;
 }
 
-.carousel{
+
+.ops{
+    font-family: 'Nunito', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
     padding: 10%;
-    margin-top: 20%;
-    margin: 10%;
-    width: 80%;
-    height: 80%;
-    content: center;
+    margin-top: 10%;
 }
 
-.carousel-inner{
-    width: 100%;
+.begin-image{
+    width: 320px;
+    padding: 20% 20% 10% 20%; 
+    margin-top: 15%;
     height: 100%;
+
 }
 
-a.carousel-control-next, a.carousel-control-prev{
+
+
+.beginning{
     position: fixed;
-    height:190%;
+    text-align: center;
+    justify-content: center;
+    top: 55%;
+    left: 10%;
+    right: 10%;
 }
 
-.carousel-indicators{
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: antiquewhite;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#continue{
+    background-color: antiquewhite;
+    color: #9381ffff;
+    border-radius: 20px;
+    border: none;
     position: fixed;
+    left: 30%;
+    right: 30%;
+    bottom: 16%;
+    padding: 2%;
 }
 
-.carousel-control-prev{
-    position: relative;
+#skip{
+    border: 2px solid antiquewhite;
+    background-color: #9381ffff;
+    color: antiquewhite;
+    border-radius: 20px;
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    bottom: 8%;
+    padding: 2%;
 }
-
 
 
 /* MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP_MAP */

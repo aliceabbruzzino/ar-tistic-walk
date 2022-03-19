@@ -1,38 +1,6 @@
+// MAP SCRIPT
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpY2VhYmJydXp6aW5vIiwiYSI6ImNrejAwajB5ZTB6bGsyb212NzNlNDQwenQifQ.iLWCm0d4W6_5wycJ2S7WRg';
-
-/*navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
-    enableHighAccuracy: true
-})
-
-function successLocation(position){
-    console.log(position)
-    setupMap([position.coords.longitude, position.coords.latitude])
-}
-
-function errorLocation(){
-    setupMap([--8.575343769409, 52.67368879119])
-}
-
-function setupMap(center){
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: center,
-        zoom: 15
-    })
-
-    const nav = new mapboxgl.NavigationControl();
-        map.addControl(nav);
-
-    var directions = new MapboxDirections({
-        accessToken: mapboxgl.accessToken
-      });
-    
-      map.addControl(directions, 'top-left');
-}*/
-
-
-
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -114,3 +82,34 @@ function onLocationError(e) {
 
 map.on('locationerror', onLocationError);
 
+
+/*navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
+    enableHighAccuracy: true
+})
+
+function successLocation(position){
+    console.log(position)
+    setupMap([position.coords.longitude, position.coords.latitude])
+}
+
+function errorLocation(){
+    setupMap([--8.575343769409, 52.67368879119])
+}
+
+function setupMap(center){
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: center,
+        zoom: 15
+    })
+
+    const nav = new mapboxgl.NavigationControl();
+        map.addControl(nav);
+
+    var directions = new MapboxDirections({
+        accessToken: mapboxgl.accessToken
+      });
+    
+      map.addControl(directions, 'top-left');
+}*/
