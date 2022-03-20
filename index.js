@@ -47,4 +47,5 @@ options = {
 id = navigator.geolocation.watchPosition(success, error, options);
 
 
-
+let scene = document.querySelector("a-scene")  
+scene.camera.far = 3 // default is 1000 afaiks
