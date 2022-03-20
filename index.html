@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+
   <!-- My CSS -->
   <link rel="stylesheet" href="./style.css">
   <style>
@@ -22,7 +22,7 @@
   <script>
     if (window.innerWidth >= 768) {
       window.location = "index2.html";
-  }
+    }
   </script>
 
   <title>AR-tistic Walk</title>
@@ -55,22 +55,22 @@
   </header>
 
   <main class="container-fluid">
-    
-      <div class="d-flex flex-column align-items-center align-self-center content">
-        <div class="begin-image p-2">
-          <img id="image" src="./icons/begin_phone.svg">
-        </div>
 
-        <div id="caption" class="beginning p-2 align-items-center">
-          <h3>Welcome</h3>
-          <p>You are about to begin a journey <br> into Augmented Reality</p>
-        </div>
+    <div class="d-flex flex-column align-items-center align-self-center content">
+      <div class="begin-image p-2">
+        <img id="image" src="./icons/begin_phone.svg">
       </div>
 
-      <div class="d-flex flex-column align-items-center">
-        <button type="button" id="continue" onclick="changeImage();">Continue</button>
-        <button type="button" id="skip" onclick="javascript:location.href='./map.html'">Skip</button>
+      <div id="caption" class="beginning p-2 align-items-center">
+        <h3>Welcome</h3>
+        <p>You are about to begin a journey <br> into Augmented Reality</p>
       </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center buttons">
+      <button type="button" id="continue" onclick="changeImage();">Continue</button>
+      <button type="button" id="skip" onclick="javascript:location.href='./map.html'">Skip</button>
+    </div>
 
   </main>
 
