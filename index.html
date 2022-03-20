@@ -55,20 +55,22 @@
   </header>
 
   <main class="container-fluid">
-    <div class="d-flex justify-content-center">
-      <img id="image" class="begin-image" src="./icons/begin_phone.svg">
-    </div>
+    
+      <div class="d-flex flex-column align-items-center align-self-center content">
+        <div class="begin-image p-2">
+          <img id="image" src="./icons/begin_phone.svg">
+        </div>
 
-    <div id="caption" class="beginning">
-      <h3>Welcome</h3>
-      <p>You are about to begin a journey <br> into Augmented Reality</p>
-    </div>
+        <div id="caption" class="beginning p-2 align-items-center">
+          <h3>Welcome</h3>
+          <p>You are about to begin a journey <br> into Augmented Reality</p>
+        </div>
+      </div>
 
-    <div>
-      <button type="button" id="continue" onclick="changeImage();">Continue</button>
-      <button type="button" id="skip" onclick="javascript:location.href='./map.html'">Skip</button>
-    </div>
-
+      <div class="d-flex flex-column align-items-center">
+        <button type="button" id="continue" onclick="changeImage();">Continue</button>
+        <button type="button" id="skip" onclick="javascript:location.href='./map.html'">Skip</button>
+      </div>
 
   </main>
 
