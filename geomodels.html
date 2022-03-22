@@ -16,9 +16,10 @@
 
   <!-- Aframe JS -->
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js'></script>
+  <script src='https://raw.githack.com/AR-js-org/AR.js/ES6/aframe/build/aframe-ar-nft.js'></script>
+
+  <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
   <!-- General script -->
   <script src="./general.js"></script>
   <script>
@@ -52,19 +53,23 @@
   </div>
 
   <!-- a-frame scene -->
-  <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-    <!-- a-nft is the anchor that defines an Image Tracking entity -->
-    <!-- on 'url' use the path to the Image Descriptors created before. -->
-    <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
-    <a-nft type="nft" url="NFT_trackers/photo/photo" smooth="true" smoothCount="10" smoothTolerance=".01"
-      smoothThreshold="5">
-      <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-      <a-entity gltf-model="assets/HS_building/scene.gltf" scale="5 5 5" position="50 150 0">
-      </a-entity>
-    </a-nft>
-    <!-- static camera that moves according to the device movemenents -->
-    <a-entity camera></a-entity>
+  <a-scene
+        vr-mode-ui='enabled: false;'
+        renderer="logarithmicDepthBuffer: true; precision: medium;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+        <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
+        <a-nft
+            type='nft' url='assets/HS_building/HS_building-image/HS_building'
+            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            <a-entity
+                gltf-model='assets/HS_building/scene.gltf'
+                scale="5 5 5"
+                position="150 300 -100"
+                >
+            </a-entity>
+        </a-nft>
+		<a-entity camera></a-entity>
   </a-scene>
 
   <div class="centered">
