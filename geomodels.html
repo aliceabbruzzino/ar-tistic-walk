@@ -49,7 +49,8 @@
       -->
 
   <a-scene vr-mode-ui="enabled: false" embedded
-    arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth:1280; displayHeight:960; debugUIEnabled:false;'>
+    arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth:1280; displayHeight:960; debugUIEnabled:false;'
+    detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;>
 
     <a-asset>
       <a-asset-item id="Living_bridge" src="assets/Living_bridge/scene.gltf"></a-asset-item>
@@ -59,7 +60,7 @@
       <a-asset-item id="CSIS_building" src="assets/CSIS_building/scene.gltf"></a-asset-item>
     </a-asset>
 
-    <a-marker type='pattern' preset="custom" src="./assets/Living_bridge/marker/pattern-LivingBridge.patt">
+    <a-marker type='barcode' value="0">
       <a-entity 
             gltf-model='#Living_bridge'
             scale='50 50 50'
