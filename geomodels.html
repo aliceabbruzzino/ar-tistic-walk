@@ -70,6 +70,24 @@
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
     <a-entity camera></a-entity>
 
+  <!-- a-frame scene -->
+  <a-scene
+        vr-mode-ui='enabled: false;'
+        renderer="logarithmicDepthBuffer: true; precision: medium;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+        <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
+        <a-nft
+            type='nft' url='assets/HS_building/HS_building-image/HS_building'
+            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            <a-entity
+                gltf-model='assets/HS_building/scene.gltf'
+                scale="5 5 5"
+                position="150 300 -100"
+                >
+            </a-entity>
+        </a-nft>
+		<a-entity camera></a-entity>
   </a-scene>
 
   
