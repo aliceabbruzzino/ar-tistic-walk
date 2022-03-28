@@ -33,7 +33,7 @@ var myIconLocation = L.icon({
     popupAnchor:  [8, -73] // point from which the popup should open relative to the iconAnchor
 });
 
-var hsBuilding      = L.marker([52.678526, -8.568771], {icon: myIcon}).bindPopup('Health and Science Building'),
+var hsBuilding      = L.marker([52.678526, -8.568771], {icon: myIcon}).bindPopup('Art and Music Building'),
     livingBridge    = L.marker([52.676576, -8.570407], {icon: myIcon}).bindPopup('Living Bridge'),
     csBuilding      = L.marker([52.674082, -8.575838], {icon: myIcon}).bindPopup('Computer Science Building'),
     rsBuilding      = L.marker([52.673199, -8.577315], {icon: myIcon}).bindPopup('Rober Shuman Building'),
