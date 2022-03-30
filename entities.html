@@ -51,3 +51,49 @@
         <a-entity id="hsBuilding"></a-entity>
         <a-entity id="foundationBuilding"></a-entity>
         <a-entity id="csisBuilding"></a-entity>
+
+
+
+        <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;">
+            <a-marker type='barcode' value="0">
+              <a-asset>
+                <a-asset-item id="livingBridge" src="assets/Living_bridge/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#livingBridge" animation-mixer></a-entity>
+            </a-marker>
+        
+            <a-marker type='barcode' value="1">
+              <a-asset>
+                <a-asset-item id="library" src="assets/Library/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#library" animation-mixer></a-entity>
+            </a-marker>
+        
+            <a-marker type='barcode' value="2">
+              <a-asset>
+                <a-asset-item id="hsBuilding" src="assets/HS_building/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#hsBuilding" animation-mixer></a-entity>
+            </a-marker>
+        
+            <a-marker type='barcode' value="3">
+              <a-asset>
+                <a-asset-item id="csisBuilding" src="assets/CSIS_building/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#csisBuilding" animation-mixer></a-entity>
+            </a-marker>
+        
+            <a-marker type='barcode' value="4">
+              <a-asset>
+                <a-asset-item id="foundationBuilding" src="assets/Foundation_building/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#foundationBuilding" animation-mixer></a-entity>
+            </a-marker>
+        
+            <a-marker type='barcode' value="5">
+              <a-asset>
+                <a-asset-item id="rsBuilding" src="assets/RS_building/scene.gltf"></a-asset-item>
+              </a-asset>
+              <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="#rsBuilding" animation-mixer></a-entity>
+            </a-marker>
+          </a-scene>
