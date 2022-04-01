@@ -11,7 +11,7 @@ function changeImage() {
     } else if (image.getAttribute('src') == "./icons/begin_eye.svg") {
         image.src = "./icons/begin_qrcode.svg";
         document.getElementById("caption").innerHTML="<h3>Scanning</h3><p>Hold the QR code in your hand <br> and let the prjection happen</p>";
-    } else if (image.getAttribute('src') == "./icons"){
+    } else if (image.getAttribute('src') == "./icons/begin_qrcode.svg"){
         image.src = "./icons/begin_rocket.svg";
         document.getElementById("caption").innerHTML="<h3>Departure</h3><p>You are now ready to start seeing things <br> from another point of view</p>";
     } else {
