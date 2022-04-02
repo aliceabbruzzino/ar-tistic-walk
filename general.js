@@ -1,6 +1,5 @@
-// GENERAL APP SCRIPT
-
 // CHANGE IMAGE + CAPTION + continue on the map
+
 function changeImage() {
     if (image.getAttribute('src') == "./icons/begin_phone.svg") {
         image.src = "./icons/begin_map.svg";

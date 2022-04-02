@@ -18,8 +18,8 @@ var myIcon = L.icon({
     iconSize:     [60, 95], // size of the icon
     shadowSize:   [80, 95], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [10, 62],  // the same for the shadow
-    popupAnchor:  [8, -73] // point from which the popup should open relative to the iconAnchor
+    shadowAnchor: [10, 62], // the same for the shadow
+    popupAnchor:  [8, -73]  // point from which the popup should open relative to the iconAnchor
 });
 
 var myIconLocation = L.icon({
@@ -29,16 +29,16 @@ var myIconLocation = L.icon({
     iconSize:     [60, 95], // size of the icon
     shadowSize:   [80, 95], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [10, 62],  // the same for the shadow
-    popupAnchor:  [8, -73] // point from which the popup should open relative to the iconAnchor
+    shadowAnchor: [10, 62], // the same for the shadow
+    popupAnchor:  [8, -73]  // point from which the popup should open relative to the iconAnchor
 });
 
-var hsBuilding      = L.marker([52.678526, -8.568771], {icon: myIcon}).bindPopup('Art and Music Building'),
-    livingBridge    = L.marker([52.676576, -8.570407], {icon: myIcon}).bindPopup('Living Bridge'),
-    csBuilding      = L.marker([52.674082, -8.575838], {icon: myIcon}).bindPopup('Computer Science Building'),
+var hsBuilding      = L.marker([52.678524, -8.568776], {icon: myIcon}).bindPopup('Art and Music Building'),
+    livingBridge    = L.marker([52.676577, -8.570377], {icon: myIcon}).bindPopup('Living Bridge'),
+    csBuilding      = L.marker([52.674083, -8.575815], {icon: myIcon}).bindPopup('Computer Science Building'),
     rsBuilding      = L.marker([52.673199, -8.577315], {icon: myIcon}).bindPopup('Rober Shuman Building'),
-    fBuilding       = L.marker([52.674184, -8.573063], {icon: myIcon}).bindPopup('Foundation Builing'),
-    library         = L.marker([52.673546, -8.572929], {icon: myIcon}).bindPopup('Glucksman Library');
+    fBuilding       = L.marker([52.674187, -8.573059], {icon: myIcon}).bindPopup('Foundation Builing'),
+    library         = L.marker([52.673542, -8.572933], {icon: myIcon}).bindPopup('Glucksman Library');
 
 var markers = L.layerGroup([hsBuilding, livingBridge, csBuilding, rsBuilding, fBuilding, library]);
 
@@ -81,35 +81,3 @@ function onLocationError(e) {
 }
 
 map.on('locationerror', onLocationError);
-
-
-/*navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
-    enableHighAccuracy: true
-})
-
-function successLocation(position){
-    console.log(position)
-    setupMap([position.coords.longitude, position.coords.latitude])
-}
-
-function errorLocation(){
-    setupMap([--8.575343769409, 52.67368879119])
-}
-
-function setupMap(center){
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: center,
-        zoom: 15
-    })
-
-    const nav = new mapboxgl.NavigationControl();
-        map.addControl(nav);
-
-    var directions = new MapboxDirections({
-        accessToken: mapboxgl.accessToken
-      });
-    
-      map.addControl(directions, 'top-left');
-}*/

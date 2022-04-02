@@ -19,15 +19,12 @@
   <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src='https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'></script>
 
-
-  <!-- General script -->
-  <script src='./general.js'></script>
+  <!-- Script for not run web app on displays with width greater than 768px-->
   <!--<script>
     if (window.innerWidth >= 768) {
       window.location = 'index2.html';
     }
   </script>-->
-
 
   <title>AR-tistic Walk</title>
 </head>
@@ -39,14 +36,13 @@
         Coordinates:
         Living bridge: latitude:52.676577; longitude:-8.570377; 
         Library: latitude:52.673542; longitude:-8.572933; 
-        HS Building: latitude:52.678524; longitude:-8.568776;
+        AM Building: latitude:52.678524; longitude:-8.568776;
         Foundation Building: latitude:52.674187; longitude:-8.573059;
         CSIS: latitude:52.674083; longitude:-8.575815;
         RS Building: latitude:52.673195; longitude:-8.577320;  
 
         Thomond Village: latitude:52.679236; longitude:-8.577019;
       -->
-
       
   <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
     <a-asset>
@@ -56,7 +52,7 @@
       <a-asset-item id='library' src='assets/Library/scene.gltf'></a-asset-item>
     </a-asset>
     <a-asset>
-      <a-asset-item id='hsBuilding' src='assets/HS_building/scene.gltf'></a-asset-item>
+      <a-asset-item id='amBuilding' src='assets/AM_building/scene.gltf'></a-asset-item>
     </a-asset>
     <a-asset>
       <a-asset-item id='csisBuilding' src='assets/CSIS_building/scene.gltf'></a-asset-item>
@@ -85,6 +81,7 @@
     </a>
   </div>
 
+  <!-- Models display JS -->
   <script src='./index.js'></script>
 
   <!-- Bootstrap JS -->
