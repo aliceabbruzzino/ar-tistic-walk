@@ -36,7 +36,6 @@ var myIconLocation = L.icon({
 var hsBuilding      = L.marker([52.678524, -8.568776], {icon: myIcon}).bindPopup('Art and Music Building'),
     livingBridge    = L.marker([52.676577, -8.570377], {icon: myIcon}).bindPopup('Living Bridge'),
     csBuilding      = L.marker([52.674083, -8.575815], {icon: myIcon}).bindPopup('Computer Science Building'),
-    rsBuilding      = L.marker([52.673199, -8.577315], {icon: myIcon}).bindPopup('Rober Shuman Building'),
     fBuilding       = L.marker([52.674187, -8.573059], {icon: myIcon}).bindPopup('Foundation Builing'),
     library         = L.marker([52.673542, -8.572933], {icon: myIcon}).bindPopup('Glucksman Library');
 
@@ -81,3 +80,9 @@ function onLocationError(e) {
 }
 
 map.on('locationerror', onLocationError);
+
+
+
+
+
+

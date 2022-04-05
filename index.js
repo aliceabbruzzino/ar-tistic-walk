@@ -10,8 +10,7 @@ function success(pos) {
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#amBuilding' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#csisBuilding' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#foundationBuilding' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#rsBuilding' animation-mixer></a-entity>"]
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#foundationBuilding' animation-mixer></a-entity>"]
 
 // displays the model with a 1s delay if the user is in a 11.1m range around the model's position
   ARObjects.forEach((htmlString, index) => {
@@ -32,8 +31,8 @@ function error(err) {
 }
 
 target = [
-  // real living bridge { latitude: 52.676577, longitude: -8.570377 },
-  { latitude: 52.679236, longitude: -8.577019 },
+  { latitude: 52.676577, longitude: -8.570377 }, // living Bridge
+  // thomond village { latitude: 52.679236, longitude: -8.577019 },
   { latitude: 52.673542, longitude: -8.572933 }, // library
   { latitude: 52.678524, longitude: -8.568776 }, // amBuilding
   { latitude: 52.674187, longitude: -8.573059 }, // fBuilding
@@ -48,3 +47,6 @@ options = {
 };
 
 id = navigator.geolocation.watchPosition(success, error, options);
+
+
+
