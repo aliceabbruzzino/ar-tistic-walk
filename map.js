@@ -39,7 +39,7 @@ var hsBuilding      = L.marker([52.678524, -8.568776], {icon: myIcon}).bindPopup
     fBuilding       = L.marker([52.674187, -8.573059], {icon: myIcon}).bindPopup('Foundation Builing'),
     library         = L.marker([52.673542, -8.572933], {icon: myIcon}).bindPopup('Glucksman Library');
 
-var markers = L.layerGroup([hsBuilding, livingBridge, csBuilding, rsBuilding, fBuilding, library]);
+var markers = L.layerGroup([hsBuilding, livingBridge, csBuilding, fBuilding, library]);
 
 var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
 var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
