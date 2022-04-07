@@ -30,7 +30,6 @@
 </head>
 
 <body style='margin:0; overflow:hidden;'>
-  <header></header>
   <div class='centered instructions'></div>
   <!--
         Coordinates:
@@ -67,7 +66,8 @@
     <!--<a-marker type='pattern' patternUrl="icons/pattern-marker.patt">-->
 
     <a-marker type="barcode" value="0">    
-      <a-entity id="renderer" visibility="hidden"></a-entity>
+      <!--<a-entity id="renderer" visibility="hidden"></a-entity>-->
+      <a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>
     </a-marker>
        
 
@@ -82,8 +82,8 @@
     </a>
   </div>
 
-  <!-- Models display JS -->
-  <script src='./index.js'></script>
+  <!-- Models display JS 
+  <script src='./index.js'></script>-->
 
   <!-- Bootstrap JS -->
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
