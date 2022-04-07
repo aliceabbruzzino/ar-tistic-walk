@@ -51,11 +51,9 @@
       <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
     </a-asset>
 
-    <!--<a-marker type="barcode" value="0">-->
-    <a-marker-camera type="pattern" patternUrl="icons/pattern-marker.patt"></a-marker-camera>
-    <a-marker type='pattern' patternUrl="icons/pattern-marker.patt">        
-      <!--<a-entity id="renderer" visibility="hidden"></a-entity>-->
-      <a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>
+    <a-marker type="barcode" value="0">    
+      <a-entity id="renderer" visibility="hidden"></a-entity>
+      <!--<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>-->
     </a-marker>
        
 
@@ -70,8 +68,8 @@
     </a>
   </div>
 
-  <!-- Models display JS 
-  <script src='./index.js'></script>-->
+  <!-- Models display JS -->
+  <script src='./index.js'></script>
 
   <!-- Bootstrap JS -->
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
