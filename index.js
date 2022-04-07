@@ -6,11 +6,11 @@ var id, target, options;
 function success(pos) {
   var crd = pos.coords;
   var ARObjects = [
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#livingBridge' gps-entity-place='latitude: 52.679236; longitude: -8.577019;' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' gps-entity-place='latitude:52.673542; longitude:-8.572933;' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#amBuilding' gps-entity-place='latitude:52.678524; longitude:-8.568776;' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#csisBuilding' gps-entity-place='latitude:52.674083; longitude:-8.575815;' animation-mixer></a-entity>",
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#foundationBuilding' gps-entity-place='latitude:52.674187; longitude:-8.573059;' animation-mixer></a-entity>"]
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#livingBridge'  animation-mixer></a-entity>",
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library'  animation-mixer></a-entity>",
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#amBuilding'  animation-mixer></a-entity>",
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#csisBuilding' animation-mixer></a-entity>",
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#foundationBuilding' animation-mixer></a-entity>"]
 
 // displays the model with a 1s delay if the user is in a 11.1m range around the model's position
   ARObjects.forEach((htmlString, index) => {
