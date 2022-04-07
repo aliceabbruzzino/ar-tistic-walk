@@ -1,3 +1,5 @@
+<!-- VIEW PAGE -->
+
 <!doctype html>
 <html lang='en'>
 
@@ -19,12 +21,12 @@
   <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <script src='https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'></script>
 
-  <!-- Script for not run web app on displays with width greater than 768px-->
-  <!--<script>
+  <!-- Script to redirect to error page if the screen in >= than 768px -->
+  <script>
     if (window.innerWidth >= 768) {
       window.location = 'index2.html';
     }
-  </script>-->
+  </script>
 
   <title>AR-tistic Walk</title>
 </head>
@@ -42,6 +44,7 @@
         Thomond Village: latitude:52.679236; longitude:-8.577019;
       -->
       
+  <!-- a-scene paths to models -->
   <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
     <a-asset>
       <a-asset-item id='livingBridge' src='assets/Living_bridge/scene.gltf'></a-asset-item>
@@ -51,15 +54,14 @@
       <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
     </a-asset>
 
+    <!-- a-scene marker -->
     <a-marker type="barcode" value="0">    
       <a-entity id="renderer" visibility="hidden"></a-entity>
       <!--<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>-->
     </a-marker>
-       
-
   </a-scene>
 
-
+  <!-- button to return to map --> 
   <div class='centered'>
     <a href='./map.html'>
       <button id='back'>

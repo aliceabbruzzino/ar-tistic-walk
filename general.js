@@ -1,4 +1,7 @@
 // CHANGE IMAGE + CAPTION + continue on the map
+// get the attriute 'src' of the image from the page and change the image
+// get the element by id 'caption' from the page and change text
+// both everytime that the button is clicked
 
 function changeImage() {
     if (image.getAttribute('src') == "./icons/begin_phone.svg") {
