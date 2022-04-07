@@ -45,29 +45,18 @@
   <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
     <a-asset>
       <a-asset-item id='livingBridge' src='assets/Living_bridge/scene.gltf'></a-asset-item>
-    </a-asset>
-    <a-asset>
       <a-asset-item id='library' src='assets/Library/scene.gltf'></a-asset-item>
-    </a-asset>
-    <a-asset>
       <a-asset-item id='amBuilding' src='assets/AM_building/scene.gltf'></a-asset-item>
-    </a-asset>
-    <a-asset>
       <a-asset-item id='csisBuilding' src='assets/CSIS_building/scene.gltf'></a-asset-item>
-    </a-asset>
-
-    <a-asset>
       <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
     </a-asset>
 
-    <a-marker-camera type="pattern" patternUrl="icons/pattern-marker.patt"></a-marker-camera>
-
-
-    <!--<a-marker type='pattern' patternUrl="icons/pattern-marker.patt">-->
+    <!--<a-marker-camera type="pattern" patternUrl="icons/pattern-marker.patt"></a-marker-camera>
+    <a-marker type='pattern' patternUrl="icons/pattern-marker.patt">-->
 
     <a-marker type="barcode" value="0">    
       <!--<a-entity id="renderer" visibility="hidden"></a-entity>-->
-      <a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>
+      <a-entity id='rederer' position='0 0 0' scale='0.05 0.05 0.05' gltf-model='#library' animation-mixer></a-entity>
     </a-marker>
        
 
