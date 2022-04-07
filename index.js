@@ -31,8 +31,8 @@ function error(err) {
 }
 
 target = [
-  { latitude: 52.676577, longitude: -8.570377 }, // living Bridge
-  // thomond village { latitude: 52.679236, longitude: -8.577019 },
+  //{ latitude: 52.676577, longitude: -8.570377 }, // living Bridge
+  { latitude: 52.679236, longitude: -8.577019 }, // thomond village 
   { latitude: 52.673542, longitude: -8.572933 }, // library
   { latitude: 52.678524, longitude: -8.568776 }, // amBuilding
   { latitude: 52.674187, longitude: -8.573059 }, // fBuilding
