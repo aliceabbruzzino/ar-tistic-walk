@@ -6,8 +6,8 @@ var id, target, options;
 function success(pos) {
   var crd = pos.coords;
   var ARObjects = [
-    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#livingBridge' animation-mixer></a-entity>",
+    "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#library' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#amBuilding' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#csisBuilding' animation-mixer></a-entity>",
     "<a-entity id='rederer' position='0 0 0' scale='0.5 0.5 0.5' gltf-model='#foundationBuilding' animation-mixer></a-entity>"]
