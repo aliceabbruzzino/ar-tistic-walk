@@ -34,17 +34,7 @@
 
 <body style='margin:0; overflow:hidden;'>
   <div class='centered instructions'></div>
-  <!--
-        Coordinates:
-        Living bridge: latitude:52.676577; longitude:-8.570377; 
-        Library: latitude:52.673542; longitude:-8.572933; 
-        AM Building: latitude:52.678524; longitude:-8.568776;
-        Foundation Building: latitude:52.674187; longitude:-8.573059;
-        CSIS: latitude:52.674083; longitude:-8.575815;
 
-        Thomond Village: latitude:52.679236; longitude:-8.577019;
-      -->
-      
   <!-- a-scene paths to models -->
   <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
     <a-asset>
@@ -55,7 +45,7 @@
       <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
     </a-asset>
 
-    <!-- a-scene marker -->
+    <!-- a-scene markers -->
     <a-marker type="barcode" value="0">    
       <a-entity id="livingBridge"></a-entity>
     </a-marker>
