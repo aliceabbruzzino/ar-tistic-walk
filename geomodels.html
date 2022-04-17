@@ -36,32 +36,40 @@
 
   <!-- a-scene paths to models -->
   <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
-    <a-asset>
-      <a-asset-item id='livingBridge' src='assets/Living_bridge/scene.gltf'></a-asset-item>
-      <a-asset-item id='library' src='assets/Library/scene.gltf'></a-asset-item>
-      <a-asset-item id='amBuilding' src='assets/AM_building/scene.gltf'></a-asset-item>
-      <a-asset-item id='csisBuilding' src='assets/CSIS_building/scene.gltf'></a-asset-item>
-      <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
-    </a-asset>
 
     <!-- a-scene markers -->
-    <a-marker type="barcode" value="0">    
+    <a-marker type="barcode" value="0">  
+      <a-asset>
+        <a-asset-item id="livingBridge" src="assets/Living_bridge/scene.gltf"></a-asset-item>
+      </a-asset>  
       <a-entity id="livingBridge"></a-entity>
     </a-marker>
 
     <a-marker type="barcode" value="1">    
+      <a-asset>
+        <a-asset-item id='library' src='assets/Library/scene.gltf'></a-asset-item>
+      </a-asset>
       <a-entity id="library"></a-entity>
     </a-marker>
 
-    <a-marker type="barcode" value="2">    
+    <a-marker type="barcode" value="2">  
+      <a-asset>
+        <a-asset-item id='amBuilding' src='assets/AM_building/scene.gltf'></a-asset-item>
+      </a-asset>
       <a-entity id="amBuilding"></a-entity>
     </a-marker>
 
-    <a-marker type="barcode" value="3">    
+    <a-marker type="barcode" value="3">  
+      <a-asset>
+        <a-asset-item id='csisBuilding' src='assets/CSIS_building/scene.gltf'></a-asset-item>
+      </a-asset>  
       <a-entity id="csisBuilding"></a-entity>
     </a-marker>
 
-    <a-marker type="barcode" value="4">    
+    <a-marker type="barcode" value="4">   
+      <a-asset>
+        <a-asset-item id='foundationBuilding' src='assets/Foundation_building/scene.gltf'></a-asset-item>
+      </a-asset> 
       <a-entity id="foundationBuilding"></a-entity>
     </a-marker>
 
