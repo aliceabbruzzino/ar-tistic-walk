@@ -33,6 +33,7 @@ var myIconLocation = L.icon({
     popupAnchor:  [8, -73]  // point from which the popup should open relative to the iconAnchor
 });
 
+// variable with the locations coordinates
 var hsBuilding      = L.marker([52.678524, -8.568776], {icon: myIcon}).bindPopup('Art and Music Building'),
     livingBridge    = L.marker([52.676577, -8.570377], {icon: myIcon}).bindPopup('Living Bridge'),
     csBuilding      = L.marker([52.674083, -8.575815], {icon: myIcon}).bindPopup('Computer Science Building'),
